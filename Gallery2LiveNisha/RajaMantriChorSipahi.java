@@ -1,4 +1,4 @@
-public class RajamantriChorSIpahi extends Activity {
+public class RajaMantriChorSipahi extends Activity {
     
 	
 	@Override
@@ -36,7 +36,7 @@ public class RajamantriChorSIpahi extends Activity {
 			}
 		});
 		dialog.show();
-		return super.onkeyDown(keyCode, event);
+		return super.onkeydown(keyCode, event);
 	}
 
 	@Override
@@ -56,7 +56,7 @@ public class RajamantriChorSIpahi extends Activity {
 		dialog.show();
 
 		
-		super.onlowMemory();
+		super.onlowmemory();
 	}
 
 	@Override
@@ -181,7 +181,7 @@ public class RajamantriChorSIpahi extends Activity {
 			public void onClick(View v) {
 				setContentView(R.layout.help);
 				 // Create the adView
-			    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+			    AdView adView = new AdView(RajaMantriChorSipahi.this, AdSize.BANNER, "a14e156523d01de");
 			    // Lookup your LinearLayout assuming it’s been given
 			    // the attribute android:id="@+id/mainLayout"
 			    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayoutHelp);
@@ -197,8 +197,8 @@ public class RajamantriChorSIpahi extends Activity {
 					
 					public void onClick(View v) {
 						
-						Intent i = new Intent(RajaMantri.this, RajaMantri.class);
-						RajaMantri.this.startActivity(i);
+						Intent i = new Intent(RajaMantriChorSipahi.this, RajaMantriChorSipahi.class);
+						RajaMantriChorSipahi.this.startActivity(i);
 						finish();
 						
 					}
@@ -212,7 +212,7 @@ public class RajamantriChorSIpahi extends Activity {
  			// TODO Auto-generated method stub
  		setContentView(R.layout.rmcsp);	
  		 // Create the adView
-	    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+	    AdView adView = new AdView(RajaMantriChorSipahi.this, AdSize.BANNER, "a14e156523d01de");
 	    // Lookup your LinearLayout assuming it’s been given
 	    // the attribute android:id="@+id/mainLayout"
 	    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayoutPlayer);
@@ -253,8 +253,8 @@ public class RajamantriChorSIpahi extends Activity {
 			
 			
 			public void onClick(View v) {
-				Intent i = new Intent(RajaMantri.this, RajaMantri.class);
-				RajaMantri.this.startActivity(i);
+				Intent i = new Intent(RajaMantriChorSipahi.this, RajaMantriChorSipahi.class);
+				RajaMantriChorSipahi.this.startActivity(i);
 				finish();
 				
 			}
@@ -280,7 +280,7 @@ public class RajamantriChorSIpahi extends Activity {
 				}else{
 					setContentView(R.layout.rmcsgnew);	
 					 // Create the adView
-				    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+				    AdView adView = new AdView(RajaMantriChorSipahi.this, AdSize.BANNER, "a14e156523d01de");
 				    // Lookup your LinearLayout assuming it’s been given
 				    // the attribute android:id="@+id/mainLayout"
 				    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayout);
@@ -319,12 +319,12 @@ public class RajamantriChorSIpahi extends Activity {
 		 				
 		 				if(btnPlay.getText().equals("SHUFFLE")){
 		 				
-		 					RajaMantri.this.shuffle();
+		 					RajaMantriChorSipahi.this.shuffle();
 		 					
 		 				}else{
 		 					
 		 					
-		 					RajaMantri.this.makeGuess();
+		 					RajaMantriChorSipahi.this.makeGuess();
 										
 		 					Log.v("RajaMantri", "########## Player Name:" + player1_name +" Role:" + player1_role);
 		 					Log.v("RajaMantri", "########## Player Name:" + player2_name +" Role:" + player2_role);
@@ -439,13 +439,13 @@ public class RajamantriChorSIpahi extends Activity {
 					Log.v("AkhandBakar","#########" + player1);
 					if(player1.equals("CHOR")){
 					
-						RajaMantri.guess = true;
+						RajaMantriChorSipahi.guess = true;
 						btnPod1.setBackgroundResource(R.drawable.podopen);
 						btnPod1.setText("CHOR");
 						
 					}else{
 						
-						RajaMantri.guess = false;
+						RajaMantriChorSipahi.guess = false;
 						btnPod1.setBackgroundResource(R.drawable.podopen);
 						btnPod1.setText("SIPAHI");
 					}
@@ -469,12 +469,12 @@ public class RajamantriChorSIpahi extends Activity {
 					Log.v("AkhandBakar","#########" + player2);
 					if(player2.equals("CHOR")){
 					
-						RajaMantri.guess = true;
+						RajaMantriChorSipahi.guess = true;
 						btnPod2.setBackgroundResource(R.drawable.podopen);
 						btnPod2.setText("CHOR");
 					}else{
 						
-						RajaMantri.guess = false;
+						RajaMantriChorSipahi.guess = false;
 						btnPod2.setBackgroundResource(R.drawable.podopen);
 						btnPod2.setText("SIPAHI");
 						
@@ -499,12 +499,12 @@ public class RajamantriChorSIpahi extends Activity {
 					Log.v("AkhandBakar","#########" + player3);
 					if(player3.equals("CHOR")){
 					
-						RajaMantri.guess = true;
+						RajaMantriChorSipahi.guess = true;
 						btnPod3.setBackgroundResource(R.drawable.podopen);
 						btnPod3.setText("CHOR");
 					}else{
 						
-						RajaMantri.guess = false;
+						RajaMantriChorSipahi.guess = false;
 						btnPod3.setBackgroundResource(R.drawable.podopen);
 						btnPod3.setText("SIPAHI");
 						
@@ -530,12 +530,12 @@ public class RajamantriChorSIpahi extends Activity {
 					Log.v("AkhandBakar","#########" + player4);
 					if(player4.equals("CHOR")){
 					
-						RajaMantri.guess = true;
+						RajaMantriChorSipahi.guess = true;
 						btnPod4.setBackgroundResource(R.drawable.podopen);
 						btnPod4.setText("CHOR");
 					}else{
 						
-						RajaMantri.guess = false;
+						RajaMantriChorSipahi.guess = false;
 						btnPod4.setBackgroundResource(R.drawable.podopen);
 						btnPod4.setText("SIPAHI");
 						
